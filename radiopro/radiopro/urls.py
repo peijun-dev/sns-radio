@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^',include('django.contrib.auth.urls')),
     url(r'^', include('accounts.urls')),
     url(r'^', include('radiohome.urls')),
+    url(r'^upload/', include('radioupload.urls')),
 ]
