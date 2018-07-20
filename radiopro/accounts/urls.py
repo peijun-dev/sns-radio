@@ -9,4 +9,5 @@ app_name = 'accounts'
 urlpatterns = [
     # ex: /accounts/signup/
     path('signup/', views.SignUpView.as_view(), name='signup'),
+    path('me/', views.UserUpdateView.as_view(), name='my_account'),
 ]
