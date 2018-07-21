@@ -1,5 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Upload</h1>
-{% endblock %}
+<div class="container">
+    <h1>Upload</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" name="file" id="inputGroupFile04" class="custom-file-input" aria-describedby="inputGroupFileAddon04">
+                      <label class="custom-file-label" for="inputGroupFile04">ファイル選択...</label>
+                    </div>
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-outline-secondary" id="inputGroupFileAddon04">Upload</button>
+                    </div>
+                  </div>
+    </form>
+</div>
+{% endblock content %}
