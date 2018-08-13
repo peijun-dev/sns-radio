@@ -8,6 +8,6 @@ from . import views
 app_name = 'radioupload'
 
 urlpatterns = [
-    path('', views.form, name='upload'),
+    path('', views.upload, name='upload'),
     url(r'^complete/', views.complete, name = 'complete'),
-]
+    ]

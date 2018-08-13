@@ -2,10 +2,10 @@ from django.contrib import admin
 
 # Register your models here.
 
-from radioupload.models import FileNameModel
+from radioupload.models import FileModel
 
-class FileNameAdmin(admin.ModelAdmin):
-    list_display = ('id', 'file_name', 'upload_time')
-    list_display_links = ('id', 'file_name')
+class FileAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'description', 'uploaded_at')
+    list_display_link = ('id')
 
-admin.site.register(FileNameModel, FileNameAdmin)
+admin.site.register(FileModel, FileAdmin)

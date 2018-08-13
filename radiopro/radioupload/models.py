@@ -4,12 +4,9 @@ from django.db import models
 
 from datetime import datetime
 
-class FileNameModel(models.Model):
-    file_name = models.CharField(max_length = 50)
-    upload_time = models.DateTimeField(default = datetime.now)
 
-    def __str__(self):
-        return self.title
- 
-    def get_filename(self):
-        return os.path.basename(self.file_name)
+class FileModel(models.Model):
+    file = models.FileField(upload_to='radiofile/')
+    title = models.CharField(max_length=32, blank=False)
+    description = models.CharField(max_length=255, blank=True)
+    uploaded_at = models.DateTimeField(auto_now_add=True)
