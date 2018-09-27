@@ -2,4 +2,16 @@
 
 {% block content %}
 <h1>Home</h1>
+<table>
+    <tr>
+        <th>title</th>
+        <th>description</th>
+    </tr>
+    {% for item in data %}
+    <tr>
+        <th>{{item.title}}</th>
+        <th>{{item.description}}</th>
+    </tr>
+    {% endfor %}
+</table>
 {% endblock %}
