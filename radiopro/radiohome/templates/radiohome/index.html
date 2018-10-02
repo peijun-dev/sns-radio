@@ -6,11 +6,13 @@
     <tr>
         <th>title</th>
         <th>description</th>
+        <th>thumbnail</th>
     </tr>
     {% for item in data %}
     <tr>
         <th>{{item.title}}</th>
         <th>{{item.description}}</th>
+        <th>{{item.thumbnail}}</th>
     </tr>
     {% endfor %}
 </table>
