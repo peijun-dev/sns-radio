@@ -108,3 +108,4 @@ venv.bak/
 #filesystem
 radiofile/
 migrations/
+snsradio/
