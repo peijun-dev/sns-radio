@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'radiohome',
     'radioupload',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
