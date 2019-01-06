@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,6 @@ LOGIN_REDIRECT_URL = '/'
 ACCOUNT_LOGOUT_REDIRECT_URL = '/'
 
 SITE_ID = 1
+
+AUTH_USER_MODEL = 'accounts.User'
+
